@@ -1,0 +1,110 @@
+/*pruebas*/
+.home-img{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.text-blue{
+    color: dodgerblue;
+}
+.bg-blue{
+    background: dodgerblue;
+    border-radius: 50%;
+}
+@media screen and (min-width: 768px){
+    .home-img{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+
+/*quita ° antes de listado*/
+li {
+    list-style-type: none;
+  }
+
+
+
+
+/* start landing page */
+:root{
+    scroll-behavior: smooth;
+}
+.home-img{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.text-blue{
+    color: dodgerblue;
+}
+.bg-blue{
+    background: dodgerblue;
+    border-radius: 50%;
+}
+@media screen and (min-width: 768px){
+    .home-img{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+
+/* start home*/
+#home-id{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(source/walpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+}
+.coch1{
+    background-color: rgba(44,62,80,70%);
+    padding: 20px 30px;
+
+      
+    padding: 20px 30px;
+}
+
+h1{
+    margin: 0;
+    font-size: 36px;
+}
+h4{
+    font-size: 25pxpx;
+}
+p{
+    font-size: 17px;
+}
+
+.cont a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #022236;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 7px 26px;
+}
+.cont a:hover{
+    background-color: #013b5f;
+}
+
+
+@media screen and (max-width:500px){
+    .cont{
+        width: 100%;
+    }
+}
+/* fin home*/
