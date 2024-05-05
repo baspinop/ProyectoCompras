@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+      <div class="container-lg">
+        <a class="navbar-brand text-danger fw-bold fs-3" href="home.html">>¡Hello World!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="home" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="pricing.html">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+            </li>                
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> 
+  <!--Fin header-->
+  <!--cards start-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/source/foto-API-farmacia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto API Farmacia</h5>
+            <p class="card-text">Se presentan todas las farmacias haciendo uso de una API mostrando todas las farmacias registradas a traves de www.minsal.cl.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 2</h5>
+            <p class="card-text">Descripción del proyecto 2.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 3</h5>
+            <p class="card-text">Descripción del proyecto 3.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--cards end-->
+</body>
+</html>
+
+<style>
+.container {
+    padding-top: 50px;
+}
+
+.card {
+    overflow: hidden; 
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); 
+}
+
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+</style>
