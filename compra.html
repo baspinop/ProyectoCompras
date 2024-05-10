@@ -10,6 +10,7 @@
   <script src="./app.js"></script>
 </head>
 <body>
+  
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
@@ -52,6 +53,7 @@
     </nav>
   </header> 
   <!--Fin header-->
+
   <!-- Section: Design Block -->
 <section class="Ingresar">
   <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
@@ -59,11 +61,11 @@
       <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
           <h1 class="my-5 display-3 fw-bold ls-tight">
-            Registrate <br />
-            <span class="text-primary">y se parte de esta familia</span>
+            PayWeb <br />
+            <span class="text-primary">Registra tus datos</span>
           </h1>
           <p style="color: hsl(217, 10%, 50.8%)">
-            !El mejor sitio web de cursos online a tu ritmo y de cualquier nivel¡
+            
           </p>
         </div>
 
@@ -72,21 +74,15 @@
             <div class="card-body py-5 px-md-5">
 
               <!--INICIO FORMULARIO-->
-              <form action="login.html"> <!--Redirrecion a cursos si se inicia-->
+              <form onsubmit="alertaCompra()"> <!--Redirrecion a cursos si se inicia-->
 
                 <!--Primer nombre y apallido requeridos-->
                 <div class="row">
-                  <div class="col-md-6 mb-4">
+                  <div class="col-md-12 mb-4">
                     <div fr></div>
                     <div data-mdb-input-init class="form-outline">
                       <input type="text" id="form3Example1" class="form-control" required />
-                      <label id="firstNameRegistro" class="form-label" for="form3Example1">Nombre </label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" required />
-                      <label id="lasNameRegistro" class="form-label" for="form3Example2">Apellido</label>
+                      <label id="firstNameRegistro" class="form-label" for="form3Example1">Nombre y apellido</label>
                     </div>
                   </div>
                 </div>
@@ -94,30 +90,37 @@
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input type="email" id="form3Example3" class="form-control" required />
-                  <label class="form-label" for="form3Example3">Correo</label>
+                  <label class="form-label" for="form3Example3">Direccion email</label>
                 </div>
 
-                <!-- Password input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" required />
-                  <label id="passRegistro" class="form-label" for="form3Example4">Contraseña</label>
-                </div>
-
-                <!--Confirm the password-->
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="form3Example4" class="form-control" required />
-                    <label id="conPassRegistro" class="form-label" for="form3Example4">Confirma la contraseña</label>
+                <!-- Datos tarjeta -->
+                <div class="row">
+                    <div class="col-md-10 mb-4">
+                      <div fr></div>
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example1" class="form-control"  required minlength="16" maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/g, '')"/>
+                        <label id="firstNameRegistro" class="form-label" for="form3Example1">Numero tarjeta</label>
+                      </div>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example2" class="form-control" required minlength="3" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')"/>
+                        <label id="lasNameRegistro" class="form-label" for="form3Example2">CVV</label>
+                      </div>
+                    </div>
                   </div>
 
+                  
+                <!-- Fecha tarjeta -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="month" id="form3Example3" class="form-control" required />
+                    <label class="form-label" for="form3Example3">Fecha vencimiento</label>
+                  </div>
+  
                 <!-- Submit button -->
-                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-4">Registrarse
+                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-4">Pagar
                 </button>
 
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>¿Ya tienes una cuenta?:</p>
-                  <a href="login.html">Ingresar</a>
-                </div>
               </form>
             </div>
           </div>
@@ -127,9 +130,10 @@
   </div>
 </section>
 
+</body>
 
  <!--footer inicio-->
- <footer id="footer" class="bg-dark text-white p-3">
+ <footer id="footer" class=" bg-dark text-white p-3">
   <div class="container-lg">
     <div class="row">
       <div class="col-lg-12">
@@ -138,7 +142,6 @@
     </div>
   </div>
 </footer>  
-</body>
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

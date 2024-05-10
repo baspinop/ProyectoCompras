@@ -6,12 +6,13 @@
   <title>Cursos</title>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="./app.js"></script>
 </head>
 
 <!--BASTIAN PINO-->
 <body>
+  
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
@@ -35,6 +36,12 @@
               <a class="nav-link text-dark" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-dark" href="proyectos.html">Nuestros Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-dark" href="login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
@@ -47,6 +54,7 @@
       </div>
     </nav>
   </header> 
+  <!--Fin header-->
 
   <!--INICIO DE CARRUEL DE CARTAS-->
   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true" data-bs-interval="false" >
@@ -58,41 +66,43 @@
               
               <!--CURSO HTML-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="../source/htmlLogo.png" class="card-img-top" alt="...">
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="carrito/html5.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">HTML para principiantes</h5>
                     <li class="card-text">
-                      Aprende html desde 0 sin necesidad
-                      de poseer un conocimiento previo,
-                      facil y rapido
+                      <p>
+                        Aprende html desde 0 sin necesidad
+                        de poseer un conocimiento previo,
+                        facil y rapido
+                      </p>
                     </li>
                     
-                    <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
+                    <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div>
               </div> 
       
               <!--CURSO PYTHON-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="../source/pythonLogo.png" class="card-img-top" alt="..." height="200">
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="carrito/python.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Python para principiantes</h5>
                       <p class="card-text">Aprende python desde 0 sin necesidad de conocimiento previo, muy facil</p>
-                      <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
+                      <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div> 
               </div>
       
               <!--CURSO JAVA-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="../source/javaLogo.png" class="card-img-top" alt="..." height="200">
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="carrito/Java.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Java para principiantes</h5>
                     <p class="card-text">Aprende python desde 0 sin necesidad de conocimiento previo, muy facil</p>
-                    <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
+                    <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div>
               </div>
@@ -108,41 +118,37 @@
 
               <!--CURSO JavaScript-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="../source/javaScriptLogo.png" class="card-img-top" alt="..." >
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="carrito/javascript.png" class="card-img-top" alt="..." >
                   <div class="card-body">
                     <h5 class="card-title">JavaScript para principiantes</h5>
                     <p class="card-text">Aprende JavaScript desde 0 sin necesidad de poseer un conocimiento previo, facil y rapido</p>
-                    <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
+                    <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div>
               </div> 
       
               <!--Fundamentos de Programacion-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="..\source\programming-background-with-html-text.jpg" class="card-img-top" alt="..." height="250">
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="..\source\programming-background-with-html-text.jpg" class="card-img-top" alt="..." >
                   <div class="card-body">
                     <h5 class="card-title">Fundamentos de la programación</h5>
                     <p class="card-text">Aprende la logica basica que hay que tener para ser un buen programador</p>
-                    <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
+                    <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div> 
               </div>
       
               <!--CURSO RUST-->
               <div class="col-md-4">
-                <div class="card my-5 p-5">
-                  <img width="auto" height="200px" src="../source/rustLogo.png" class="card-img-top" alt="..." height="250">
+                <div class="h-100 card my-5 p-5">
+                  <img width="auto" src="carrito/rust.png" class="card-img-top" alt="..." >
                   <div class="card-body">
                     <h5 class="card-title">Rust para avanzados</h5>
                     <p class="card-text">Todo lo que necesitas saber para programar en Rust</p>
                     
-                    <button onclick="alertaCompra()" type="button" class="w-100 btn btn-lg btn-primary">Agregar</button>
-                    <!--
-                    <a href="pricing.html">
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Suscribirme</button>
-                    </a>-->
+                    <a href="carrito.html" type="button" class="w-100 btn btn-lg btn-primary">Ir a comprar</a>
                   </div>
                 </div>
               </div>
@@ -165,7 +171,7 @@
 </body>
 
  <!--footer inicio-->
- <footer id="footer" class="fixed-bottom bg-dark text-white p-3">
+ <footer id="footer" class="bg-dark text-white p-3">
   <div class="container-lg">
     <div class="row">
       <div class="col-lg-12">

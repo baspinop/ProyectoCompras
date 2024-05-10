@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursos</title>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
 </head>
-<body>
 
+<body onload="apiFarmacia(false)">
 
+    
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
@@ -56,68 +56,52 @@
   <!--Fin header-->
 
 
-  <!-- Section: Design Block -->
-<section class="Ingresar">
-  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: transparent">
-    <div class="container">
-      <div class="row gx-lg-5 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h1 class="my-5 display-3 fw-bold ls-tight">
-            Ingresar <br />
-            <span class="text-primary">y se parte de esta familia</span>
-          </h1>
-          <p style="color: hsl(217, 10%, 50.8%)">
-            !El mejor sitio web de cursos online a tu ritmo y de cualquier nivel¡
-          </p>
-        </div>
-
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card">
-            <div class="card-body py-5 px-md-5">
-              <!--INICIO FORMULARIO-->
-              <form action="cursos.html"> <!--Redirrecion a cursos si se inicia-->
-
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" required />
-                  <label id="emailLongin" class="form-label" for="form3Example3">Correo</label>
-                </div>
-
-                <!-- Password input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" required />
-                  <label id="ingresaPassRegistro" class="form-label" for="form3Example4">Contraseña</label>
-                </div>
-
-                <!-- Submit button -->
-                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-4">Ingresar
-                </button>
-
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>No tienes cuenta, registrate:</p>
-                  <a href="registro.html">Registrarse</a>
-                </div>
-              </form>
+      <div class="containerComunas">
+        <div class="row">
+            <div class="col-4">
+                <label for="comunaInput">Comuna</label>
+                <input type="text" list="comunaDatalist" id="comunaInput" class="form-control" placeholder="Ingrese Comuna">
+                <datalist id="comunaDatalist"></datalist>
             </div>
+        <div class="row">    
+            <div class="col-1">
+                <button id="botonBuscarCom" type="submit" onclick="apiFarmacia(true)" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-4">Buscar
+                </button>
+            </div>
+            <div class="col-1">
+                <button id="botonBuscarCom" type="submit" onclick="apiFarmacia(false)" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-4">Limpiar
+                </button>
+              </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+
+<!-- Creacion de tabla con datos extraidos de API-->
+    <div class="containerTabla col-10">
+            <table class="table table-striped">
+                <thead class="sticky-top bg-light">
+                    <tr>
+                        <th>Nombre farmacia</th>
+                        <th>Comuna</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaContenido">
+                </tbody>
+            </table> 
+    </div>    
 </body>
 
- <!--footer inicio-->
- <footer id="footer" class="bg-dark text-white p-3">
-  <div class="container-lg">
-    <div class="row">
-      <div class="col-lg-12">
-        <p class='m-0 d-flex justify-content-end py-3'>&copy; 2024 >¡Hello World!</p>
+
+<!--footer inicio-->
+<footer id="footer" class="bg-dark text-white p-3">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class='m-0 d-flex justify-content-end py-3'>&copy; 2024 >¡Hello World!</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>  
+</footer>
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
